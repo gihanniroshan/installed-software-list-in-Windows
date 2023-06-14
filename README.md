@@ -20,3 +20,6 @@ $sortedList = $softwareList | Sort-Object DisplayName
 $sortedList | Format-Table -AutoSize
 ```
 
+Run the above PowerShell Script in; 
+1. "Windows PowerShell ISE" or
+2. Download the [installedSoftware.ps1](./installedSoftware.ps1) and run using PowerShell
