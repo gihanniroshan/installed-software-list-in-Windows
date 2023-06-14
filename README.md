@@ -2,6 +2,7 @@
 List all the installed software in Windows using PowerShell Script
 
 <pre>
+```powershell
 $uninstallKeys = @(
     'HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall',
     'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall'
@@ -17,4 +18,5 @@ $softwareList = foreach ($uninstallKey in $uninstallKeys) {
 $sortedList = $softwareList | Sort-Object DisplayName
 
 $sortedList | Format-Table -AutoSize
+```
 </pre>
